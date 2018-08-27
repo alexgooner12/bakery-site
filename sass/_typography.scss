@@ -2,5 +2,21 @@ body {
     font-size: $default-font-size;
     font-weight: 300;
     font-family: sans-serif;
+}
 
+.heading-primary {
+    display: flex;
+    flex-direction: column;
+    
+    &__main {
+        display: block;
+        font-size: 15rem;
+    }
+    
+    &__body {
+        display: inline-block;
+        font-size: 3rem;
+        align-self: center;
+        justify-content: flex-end;
+    }
 }

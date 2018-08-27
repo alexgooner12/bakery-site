@@ -21,7 +21,8 @@
     &__link {
         text-transform: uppercase;
         text-decoration: none;
-        color: $color-light-grey;   
+        color: $color-light-grey;
+        transition: all .3s;
         
         &--current, &:hover {
             color: $color-white;
