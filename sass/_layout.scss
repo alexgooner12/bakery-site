@@ -8,3 +8,12 @@
     align-items: center;
     justify-content: center;
 }
+
+.video {
+    
+    &__content {
+        display: block;
+        width: 100%;
+    }
+    
+}
