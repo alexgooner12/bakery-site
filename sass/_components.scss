@@ -1,0 +1,31 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-black;
+    padding: 2rem;
+    color: $color-white;
+    font-size: 1.4rem;
+    
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+    
+    &__item {
+        &:not(:last-child) {
+            padding-right: 2rem;
+        }
+    }
+    
+    &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-light-grey;   
+        
+        &--current, &:hover {
+            color: $color-white;
+        }
+    }
+    
+}
