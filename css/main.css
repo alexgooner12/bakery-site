@@ -73,7 +73,7 @@ body {
   background: url("../images/title-min.jpg") top center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  opacity: .85;
+  opacity: .9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
