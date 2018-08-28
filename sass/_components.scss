@@ -112,3 +112,24 @@
     
 }
 
+// Tooltip  //
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    & .tooltiptext {
+        visibility: hidden;
+        width: 12rem;
+        background-color: $color-white;
+        color: $color-light-grey;
+        text-align: center;
+        padding: .5rem 0;
+        border-radius: .5rem;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &:hover .tooltiptext {
+        visibility: visible;
+    }
+}
