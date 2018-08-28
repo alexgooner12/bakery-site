@@ -25,3 +25,20 @@ body {
     font-size: 3rem;
     text-transform: capitalize;
 }
+
+.heading-tertiary {
+    display: flex;
+    flex-direction: column;
+    
+    &__title {
+        font-family: 'Dancing Script', cursive;
+        font-size: 4rem;
+        display: block;
+    }
+    
+    &__body {
+        display: block;
+        font-size: 3rem;
+
+    }
+}

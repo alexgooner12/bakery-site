@@ -70,4 +70,45 @@
     
 }
 
+.row {
+    max-width: 110rem;
+    margin: auto;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    .cell {
+        width: 50%; 
+        
+        &__img {
+            &--big {
+                height: auto;
+            }
+            
+            &--small {
+                height: 60rem;
+                margin-top: -.3rem;
+            }
+        }
+    }  
+}
+
+.about {
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    
+    &__text {
+        width: 60%;
+        line-height: 2rem;        
+    }
+    
+}
 

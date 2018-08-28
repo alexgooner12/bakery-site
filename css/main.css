@@ -42,6 +42,22 @@ body {
   font-size: 3rem;
   text-transform: capitalize; }
 
+.heading-tertiary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .heading-tertiary__title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    display: block; }
+  .heading-tertiary__body {
+    display: block;
+    font-size: 3rem; }
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,6 +124,44 @@ body {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px); }
+
+.row {
+  max-width: 110rem;
+  margin: auto; }
+
+.image-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .image-grid .cell {
+    width: 50%; }
+    .image-grid .cell__img--big {
+      height: auto; }
+    .image-grid .cell__img--small {
+      height: 60rem;
+      margin-top: -.3rem; }
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.about__text {
+  width: 60%;
+  line-height: 2rem; }
 
 .header {
   height: 95vh;
