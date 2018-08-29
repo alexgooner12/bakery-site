@@ -120,17 +120,82 @@
 
     & .tooltiptext {
         visibility: hidden;
-        width: 12rem;
+        width: 10rem;
         background-color: $color-white;
         color: $color-light-grey;
+        font-size: 1.5rem;
         text-align: center;
-        padding: .5rem 0;
+        padding: .4rem 0;
         border-radius: .5rem;
         position: absolute;
+        top: 100%;
+        left: 50%; 
         z-index: 1;
     }
 
     &:hover .tooltiptext {
         visibility: visible;
     }
+}
+
+.submit-form {
+    
+    &__input {
+        width: 60rem;
+        height: 3.5rem;
+        padding-left: 5rem;
+        border: 0;
+        border-bottom: 1px solid $color-white;
+        background-color: $color-black;
+        outline: none;
+        color: $color-white;
+        background-image: url(../images/800px_COLOURBOX15759933.jpg);
+        background-size: 2rem;
+        background-repeat: no-repeat; 
+        background-position: 1.4rem .6rem;
+
+        
+        &::placeholder {
+            color: $color-white;
+            font-size: 1.5rem;
+        }
+    }
+    
+    &__btn {
+        height: 4rem;
+        width: 10rem;
+        margin-left: 1rem;
+        border: 0;
+        background: $color-white;
+        cursor: pointer;
+        outline: none;
+        color: $color-black;
+    }
+}
+
+.social-nav {
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+    
+    &__item {
+        &:last-child {
+            margin-right: 0;
+        }
+        
+    }
+    
+    &__icon {
+        font-size: 3rem;
+        color: $color-white;
+        padding-right: 2rem;
+        display: inline-block;
+        
+        &.last {
+            padding-right: 0;
+        }
+        
+    }
+
 }
