@@ -10,6 +10,7 @@
     
     @include respond(tab-land) {
         background-attachment: scroll;
+        height: 60rem;
     }
 }
 
@@ -17,7 +18,7 @@
     @include respond(phone) { 
         background: url("../images/bg-video-image.jpg");
         background-size: cover; 
-        height: 60vh;
+        height: 60rem;
         width: 100%;
     }
      
@@ -45,6 +46,7 @@
     
     @include respond(tab-land) {
         background-attachment: scroll;
+        height: 60rem;
     }
    
 }

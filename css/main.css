@@ -218,7 +218,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 100%; } }
+    width: 80%; } }
 
 .submit-form__input {
   width: 60rem;
@@ -233,6 +233,9 @@ body {
   background-size: 2rem;
   background-repeat: no-repeat;
   background-position: 1.4rem .6rem; }
+  @media only screen and (max-width: 48em) {
+    .submit-form__input {
+      width: calc(100% - 5rem); } }
   .submit-form__input::-webkit-input-placeholder {
     color: #fff;
     font-size: 1.5rem; }
@@ -294,13 +297,14 @@ body {
   justify-content: center; }
   @media only screen and (max-width: 75em) {
     .header {
-      background-attachment: scroll; } }
+      background-attachment: scroll;
+      height: 60rem; } }
 
 @media only screen and (max-width: 48em) {
   .video {
     background: url("../images/bg-video-image.jpg");
     background-size: cover;
-    height: 60vh;
+    height: 60rem;
     width: 100%; } }
 
 .video__content {
@@ -328,7 +332,8 @@ body {
   justify-content: center; }
   @media only screen and (max-width: 75em) {
     .slogan {
-      background-attachment: scroll; } }
+      background-attachment: scroll;
+      height: 60rem; } }
 
 .footer {
   background-color: #000;
