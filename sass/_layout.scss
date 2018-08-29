@@ -7,24 +7,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    @include respond(tab-land) {
+        background-attachment: scroll;
+    }
 }
 
 .video {
-    
+    @include respond(phone) { 
+        background: url("../images/bg-video-image.jpg");
+        background-size: cover; 
+        height: 60vh;
+        width: 100%;
+    }
+     
     &__content {
         display: block;
         width: 100%;
-    }    
+        
+        @include respond(phone) { 
+            display: none;    
+        }
+    }
+    
 }
 
 .slogan {
     height: 85vh;
     margin-top: -.3rem;
     background-image: url(../images/coffeee-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    @include respond(tab-land) {
+        background-attachment: scroll;
+    }
+   
 }
 
 .footer {
