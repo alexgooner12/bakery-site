@@ -25,7 +25,8 @@ address {
 body {
   font-size: 1.4rem;
   font-weight: 300;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  overflow-x: hidden; }
 
 .heading-primary {
   display: -webkit-box;
@@ -34,18 +35,25 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .heading-primary__main {
     display: block;
     font-size: 15rem; }
+    @media only screen and (max-width: 28.125em) {
+      .heading-primary__main {
+        font-size: 10rem; } }
   .heading-primary__body {
     display: inline-block;
     font-size: 3rem;
-    -ms-flex-item-align: center;
-    align-self: center;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
+    @media only screen and (max-width: 28.125em) {
+      .heading-primary__body {
+        font-size: 2rem; } }
 
 .heading-secondary {
   font-size: 3rem;
@@ -119,18 +127,29 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media only screen and (max-width: 28.125em) {
+    .grid {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .grid .figure {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1; }
     .grid .figure:nth-of-type(2) {
       margin: 0 5rem; }
+      @media only screen and (max-width: 28.125em) {
+        .grid .figure:nth-of-type(2) {
+          margin: 0; } }
     .grid .figure__caption {
       font-size: 2rem;
       text-transform: capitalize;
       font-weight: 600;
       padding: 2rem;
       text-align: center; }
+    .grid .figure__image {
+      width: 100%; }
 
 .btn {
   text-decoration: none;
@@ -171,6 +190,9 @@ body {
     .image-grid .cell__img--small {
       height: 60rem;
       margin-top: -.3rem; }
+      @media only screen and (max-width: 48em) {
+        .image-grid .cell__img--small {
+          height: auto; } }
 
 .about__content {
   display: -webkit-box;
@@ -354,6 +376,9 @@ body {
 
 .margin-top-small {
   margin-top: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .margin-top-small {
+      margin-top: 2rem; } }
 
 .margin-top-medium {
   margin-top: 5rem; }
@@ -369,6 +394,9 @@ body {
 
 .margin-bottom-small {
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .margin-bottom-small {
+      margin-bottom: 2rem; } }
 
 .margin-bottom-medium {
   margin-bottom: 5rem; }

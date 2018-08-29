@@ -39,7 +39,7 @@
             display: none;
         }
     }
-    
+ 
 }
 
 
@@ -47,11 +47,19 @@
     display: flex;
     justify-content: center;
     
+    @include respond(small-phone) { 
+        flex-direction: column;     
+    }
+    
     .figure {
         flex: 1;
         
         &:nth-of-type(2) {
             margin: 0 5rem;
+            
+            @include respond(small-phone) { 
+                margin: 0; 
+            }
         }
         
         &__caption {
@@ -60,6 +68,10 @@
             font-weight: 600;
             padding: 2rem;
             text-align: center;
+        }
+        
+        &__image {
+            width: 100%    
         }
     }
 }
@@ -107,6 +119,10 @@
             &--small {
                 height: 60rem;
                 margin-top: -.3rem;
+                
+                @include respond(phone) { 
+                    height: auto; 
+                }
             }
         }
     }  

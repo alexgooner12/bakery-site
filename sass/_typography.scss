@@ -2,22 +2,32 @@ body {
     font-size: $default-font-size;
     font-weight: 300;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 .heading-primary {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
     &__main {
         display: block;
         font-size: 15rem;
+        
+        @include respond(small-phone) { 
+            font-size: 10rem; 
+        }
     }
     
     &__body {
         display: inline-block;
         font-size: 3rem;
-        align-self: center;
+//        align-self: center;
         justify-content: flex-end;
+        
+        @include respond(small-phone) { 
+            font-size: 2rem; 
+        }
     }
 }
 
