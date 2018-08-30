@@ -21,7 +21,8 @@
              <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
              <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
         </ul>  
-        <address class="address">500 TERRY FRANCOIS  ST. SF, CA 94158</address>
+            <address class="navigation__address">500 TERRY FRANCOIS  ST. SF, CA 94158</address>
+            <button class="navigation__toggler"><i class="fas fa-bars navigation__icon"></i></button>
     </nav>
 
    <!-- header -->
@@ -132,7 +133,21 @@
         </div>
     </footer>
 
+    <script>
     
+        const nav = document.querySelector('.navigation__list');
+        const toggler = document.querySelector('.navigation__toggler');
+        const navIcon = document.querySelector('.navigation__icon');
+        
+        toggler.addEventListener('click', openNav);
+        
+        function openNav() {
+            nav.classList.toggle('open');
+            navIcon.classList.toggle('fa-times'); 
+            
+        }
+
+    </script>
     
 </body>
 </html>

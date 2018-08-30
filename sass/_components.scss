@@ -11,6 +11,12 @@
     &__list {
         list-style: none;
         display: flex;
+        
+        @include respond(small-phone) {
+            display: none;
+            font-size: 3rem;
+            height: 100vh;
+        }
     }
     
     &__item {
@@ -20,6 +26,10 @@
             @include respond(phone) { 
                 padding-right: 4.5rem;
             }
+        }
+        
+        @include respond(small-phone) {
+            padding-top: 12vh;           
         }
     }
     
@@ -34,10 +44,31 @@
         }
     }
     
-    & .address {
+    &__address {
+
         @include respond(phone) { 
             display: none;
         }
+    }
+    
+    &__toggler {
+        display: none;
+        background-color: $color-black;
+        border: 0;
+        outline: none;
+        width: 3rem;
+        height: 3rem;
+        margin-left: auto;
+        
+        @include respond(small-phone) {
+            display: block;
+            align-self: flex-start;
+        }
+    }
+    
+    &__icon {
+        color: $color-white;
+        font-size: 3rem;
     }
  
 }
